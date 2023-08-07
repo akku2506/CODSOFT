@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-    char op;
+    char oprtr;
     double number1, number2;
-    cout << "Enter the Operator (+,-,*,/): ";
-    cin >> op;
+    cout << "Enter the Operator (+, -, *, /): ";
+    cin >> oprtr;
     cout << "Enter two numbers one by one: ";
     cin >> number1 >> number2;
-    switch (op){
+    switch (oprtr){
     case '+':
         cout << number1 << "+" << number2 << "=" << (number1+number2);
         break;
@@ -21,10 +21,10 @@ int main(){
          if(number2!=0.0)
         cout << number1 << "/" << number2 << "=" << (number1/number2);
         else
-        cout << "Divided by Zero situation";
+        cout << "Divided by Zero situation... Undefined!";
         break;
     default:
-    cout << op << "is an invalid operator";
+    cout << oprtr << "This is an Invalid Operator";
         break;
     }
     return 0;
